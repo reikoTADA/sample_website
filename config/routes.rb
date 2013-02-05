@@ -1,4 +1,7 @@
 SampleWebsite::Application.routes.draw do
+  resources :posts
+
+
   root :to => 'page#home'
   match 'about' => 'page#about'
   match 'contacts' => 'page#contacts'
